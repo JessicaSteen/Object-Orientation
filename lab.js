@@ -168,8 +168,18 @@ console.log(totalPopulation(states))
 */
 
 //Code Here
+var food = {
+  carb: 'Energy',
+  fat: 'Storage',
+  protein: 'Muscle',
+};
 
-
+function ingredients (obj) {
+  let {carb, fat, protein} = obj;
+  ingredients = [carb, fat, protein];
+  return [ingredients]
+}
+console.log(ingredients(food));
 
 //////////////////////////// PROBLEM 10 ////////////////////////////
 // Do not edit the code below.
