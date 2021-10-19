@@ -116,6 +116,9 @@ console.log(colorNew);
 function greeting( obj ) {
   //Code Here
   
+let {firstName, lastName, title} = obj
+
+
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
