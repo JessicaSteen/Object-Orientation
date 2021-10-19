@@ -41,7 +41,8 @@ console.log(dog.name);
 /* Print out the color of the dog you created in problem 2 using bracket-notation. */
 
 //Code here
-console.log(dog[`color`]);
+
+// console.log(dog[`color`]);
 
 
 //////////////////////////// PROBLEM 5 ////////////////////////////
@@ -103,7 +104,7 @@ var {make: makeNew} = carDetails
 var {model: modelNew} = carDetails
 var {year: yearNew} = carDetails
 
-console.log(colorNew);
+// console.log(colorNew);
 
 //////////////////////////// PROBLEM 7 ////////////////////////////
 
@@ -112,18 +113,21 @@ console.log(colorNew);
   Use object destructuring to save the object properties to new variables. 
   The property names are firstName, lastName, and title.
 */
-
+var identity = {
+  firstName: "Jessica",
+  lastName: "Steen",
+  title: "Professional Napper"
+};
 function greeting( obj ) {
-  //Code Here
-  
-let {firstName, lastName, title} = obj
+  //code here
+let {firstName, lastName, title} = obj; 
 
 
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
 }
-
+console.log(greeting(identity));
 
 
 //////////////////////////// PROBLEM 8 ////////////////////////////
@@ -138,6 +142,19 @@ let {firstName, lastName, title} = obj
 
 //Code Here
 
+var states = {
+  utah: 4,
+  california: 5,
+  texas: 6,
+  arizona: 7
+}
+
+function totalPopulation (obj) {
+let {utah, california, texas, arizona} = obj; 
+return utah + california + texas  + arizona
+}
+
+console.log(totalPopulation(states))
 
 
 //////////////////////////// PROBLEM 9 ////////////////////////////
