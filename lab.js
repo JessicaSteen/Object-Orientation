@@ -98,8 +98,12 @@ var carDetails = {
 */
 
 //Code Here
+var {color: colorNew} = carDetails
+var {make: makeNew} = carDetails
+var {model: modelNew} = carDetails
+var {year: yearNew} = carDetails
 
-
+console.log(colorNew);
 
 //////////////////////////// PROBLEM 7 ////////////////////////////
 
