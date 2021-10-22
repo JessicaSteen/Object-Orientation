@@ -245,7 +245,18 @@ console.log(cat1.name);
 */
 
 //Code here
-
+class Wizard {
+  constructor(name, age, favoriteSpell) {
+    this.name = name
+    this.age = age
+    this.favoriteSpell = favoriteSpell
+  }; 
+  castSpell() {
+    console.log(this.name, "has cast", this.favoriteSpell);
+  }
+}
+  let wizard1 = new Wizard ("Harry", " ", "Stupify")
+  wizard1.castSpell()
 //////////////////////////// PROBLEM 14 ////////////////////////////
 /*
     Write a class called Phone. We'll use it as if we were creating
