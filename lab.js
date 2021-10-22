@@ -208,15 +208,16 @@ var user = {
 user.name = "Bryan G Smith";
 user.email = "bryan.smith@devmounta.in";
 
-console.log(user.email);
+// console.log(user.email);
 //////////////////////////// PROBLEM 11 ////////////////////////////
 /*
   Using the user object above, delete the users age off of the object.
 */
 
 //Code Here
+delete user.age;
 
-
+console.log(user);
 //////////////////////////// PROBLEM 12 ////////////////////////////
 /*
   Create a class called 'Cat'. Make sure to call your constructor, and require these 3 parameters: name, age, color.
