@@ -42,7 +42,7 @@ console.log(dog.name);
 
 //Code here
 
-// console.log(dog[`color`]);
+console.log(dog[`color`]);
 
 
 //////////////////////////// PROBLEM 5 ////////////////////////////
@@ -99,12 +99,17 @@ var carDetails = {
 */
 
 //Code Here
+// correct answer?
+// var {color, make, model, year} = car
+
+//below is my answer 
+
 var {color: colorNew} = carDetails
 var {make: makeNew} = carDetails
 var {model: modelNew} = carDetails
 var {year: yearNew} = carDetails
 
-// console.log(colorNew);
+console.log(colorNew);
 
 //////////////////////////// PROBLEM 7 ////////////////////////////
 
@@ -127,7 +132,7 @@ let {firstName, lastName, title} = obj;
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
 }
-console.log(greeting(identity));
+// console.log(greeting(identity));
 
 
 //////////////////////////// PROBLEM 8 ////////////////////////////
@@ -154,7 +159,7 @@ let {utah, california, texas, arizona} = obj;
 return utah + california + texas  + arizona
 }
 
-console.log(totalPopulation(states))
+// console.log(totalPopulation(states))
 
 
 //////////////////////////// PROBLEM 9 ////////////////////////////
@@ -176,8 +181,8 @@ var food = {
 
 function ingredients (obj) {
   let {carb, fat, protein} = obj;
-  ingredients = [carb, fat, protein];
-  return [ingredients]
+  ingredients = [carb, fat, protein];  //solutions says can do without this line
+  return ingredients
 }
 console.log(ingredients(food));
 
@@ -199,9 +204,11 @@ var user = {
   Make that change without modifying the original object code above.
 */
 
-//Code Here
+//Code Here  
+user.name = "Bryan G Smith";
+user.email = "bryan.smith@devmounta.in";
 
-
+console.log(user.email);
 //////////////////////////// PROBLEM 11 ////////////////////////////
 /*
   Using the user object above, delete the users age off of the object.
